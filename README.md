@@ -11,7 +11,7 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 **Roadmap - 08/01**
 
 | Task  | Data | Responsável |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | Setup  | 10/01  | Santiago |
 | Criar componentes React  | 20/01  | Kathleen, Gian, Kaue |
 | APIs CSVs | 20/01 | Santiago |
