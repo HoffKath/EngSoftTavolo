@@ -9,6 +9,7 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 **Simplificações**: Sem notificações, sem possibilidade de confirmação, cancelamento e avaliação. 
 
 **Roadmap - 08/01**
+
 | Task  | Data | Responsável |
 | ------------- | ------------- |
 | Setup  | 10/01  | Santiago |
