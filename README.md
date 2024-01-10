@@ -23,3 +23,16 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Pag pesquisa | 26/01 | Santiago |
 | Pag Reserva | 26/01 | Fernando |
 | Pag confirmacao | 26/01 | Kathleen |
+
+## Available Scripts
+
+In the project directory, you can run:
+(you need download [node](https://nodejs.org/en))
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
