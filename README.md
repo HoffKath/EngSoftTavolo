@@ -36,3 +36,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## Folder Structure
+
+*assests* = contains all images, css files, font files, etc.
+*components* = contains all reusable UI components.
+*data* = contains all models.
+*pages* = should contain one folder for each page in our application.
+*services* = contains all images, css files, font files, etc.
+
