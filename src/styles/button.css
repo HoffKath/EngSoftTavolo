@@ -1,0 +1,17 @@
+/* Importe a fonte "Inter" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.button {
+    background-color: #9F2C2C;
+    color: white;
+    border: none;
+    padding: 20px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button:hover {
+    background-color: darkred;
+}
