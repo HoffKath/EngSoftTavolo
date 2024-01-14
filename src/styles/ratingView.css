@@ -1,0 +1,31 @@
+.inputStar {
+    display: none;
+}
+
+.inputStar:checked + label::before 
+{
+    content: '★';
+    display: inline-block;
+    font-size: 45px;
+    color: black;
+    width: 40px;
+    height: 40px;
+    text-shadow: 0 0 3px black;
+    margin-top: -15px;
+}
+
+.inputStar + label::before {
+    content: '☆';
+    display: inline-block;
+    font-size: 45px;
+    width: 40px;
+    height: 40px;
+    color: black;
+    margin-top: -15px;
+}
+
+.ratingView
+{
+    width:fit-content;
+    height: 35px;
+}
