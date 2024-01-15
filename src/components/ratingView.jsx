@@ -20,15 +20,15 @@ function RatingView({rating})
 
     return (
         <div className='ratingView'>
-            <input id={r1} className='inputStar' type='radio' checked={rating >= 1 ? true : false}/>
+            <input id={r1} className='inputStar' type='radio' checked={rating >= 1 ? true : false} onChange={() => {}}/>
             <label className='star' htmlFor={r1}/> 
-            <input id={r2} className='inputStar' type='radio' checked={rating >= 2 ? true : false}/>
+            <input id={r2} className='inputStar' type='radio' checked={rating >= 2 ? true : false} onChange={() => {}}/>
             <label className='star' htmlFor={r2}/> 
-            <input id={r3} className='inputStar' type='radio' checked={rating >= 3 ? true : false}/>            
+            <input id={r3} className='inputStar' type='radio' checked={rating >= 3 ? true : false} onChange={() => {}}/>            
             <label className='star' htmlFor={r3}/> 
-            <input id={r4} className='inputStar' type='radio' checked={rating >= 4 ? true : false}/>
+            <input id={r4} className='inputStar' type='radio' checked={rating >= 4 ? true : false} onChange={() => {}}/>
             <label className='star' htmlFor={r4}/> 
-            <input id={r5} className='inputStar' type='radio' checked={rating === 5 ? true : false}/>
+            <input id={r5} className='inputStar' type='radio' checked={rating === 5 ? true : false} onChange={() => {}}/>
             <label className='star' htmlFor={r5}/> 
         </div>
     );
