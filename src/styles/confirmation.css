@@ -1,0 +1,59 @@
+@import url('fonts.css');
+
+div{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    position: relative;
+    min-width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #9F2C2C;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding-left: 33px;
+
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    
+}
+
+.inline-label{
+    margin-left: 220px;
+}
+
+label{
+    font-size: 25px;    
+    margin-left: 35px;
+    line-height: 160%;
+}
+
+select{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+label textarea{
+    font-size: 25px;
+    border-radius: 8px;
+
+    width: 96%;
+    height: 40vh;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 2vw;
+    margin-top: 10px;
+    background-color: #D9D9D9;
+}
+
+Button{
+    position: fixed;
+    right: 33px;
+    margin-top:350px;
+}
