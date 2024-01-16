@@ -2,7 +2,7 @@ import '../styles/ratingView.css'
 
 const seedrandom = require('seedrandom');
 
-function RatingView({rating})
+function RatingView({rating, style})
 {
     rating = rating - rating % 1
 
@@ -19,7 +19,7 @@ function RatingView({rating})
     const r5 = 'r5_' + rnd
 
     return (
-        <div className='ratingView'>
+        <div className='ratingView' style={style}>
             <input id={r1} className='inputStar' type='radio' checked={rating >= 1 ? true : false} onChange={() => {}}/>
             <label className='star' htmlFor={r1}/> 
             <input id={r2} className='inputStar' type='radio' checked={rating >= 2 ? true : false} onChange={() => {}}/>
