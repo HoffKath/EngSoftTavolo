@@ -7,10 +7,10 @@
     content: '★';
     display: inline-block;
     font-size: 45px;
-    color: black;
+    color: inherit;
     width: 40px;
     height: 40px;
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px inherit;
     margin-top: -15px;
 }
 
@@ -20,7 +20,7 @@
     font-size: 45px;
     width: 40px;
     height: 40px;
-    color: black;
+    color: inherit;
     margin-top: -15px;
 }
 
@@ -28,4 +28,5 @@
 {
     width:fit-content;
     height: 35px;
+    color: black;
 }
