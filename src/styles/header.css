@@ -7,13 +7,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  margin-top: 10px;
 }
 
-a .logo img {
-    width: 350px;
-    max-width: 90%;
-    height: auto;
+.logo {
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 350px;
+  max-width: 90%;
+  height: auto;
 }
 
 nav ul {
@@ -22,7 +26,7 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  margin-right: 60px;
+  margin-right: 20px;
 }
 
 nav ul li {

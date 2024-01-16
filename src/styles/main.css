@@ -1,7 +1,6 @@
 @import url('fonts.css');
 
 .text {
-
     width: 100%;
     max-width: 1024px;
     height: auto;
@@ -38,8 +37,12 @@ Button {
     align-items: center;
     justify-content: center;
 
-    margin-top: 150px;
+    margin: 150px 90px;
     height: 100%;
-    
     flex-wrap: wrap;
+}
+
+.images img {
+    flex: 0 0 calc(50% - 30px);
+    height: auto;
 }
