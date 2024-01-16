@@ -4,7 +4,7 @@ import Button from './button';
 
 const Header = () => {
   return (
-    <header>
+    <div className="header">
         <a href="#"><div className="logo"><img src={logo} alt="Logo Tavolo" /></div></a>
         <nav>
             <ul>
@@ -14,7 +14,7 @@ const Header = () => {
                 <li><a href="#"><Button label="Crie sua conta"/></a></li>
             </ul>
         </nav>
-    </header>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import image2 from "../assets/image2.png"
 
 const Main = () => {
     return (
-        <main>
+        <div className="main">
             <div className="text">Estamos aqui para <br /><span className="italic">facilitar</span> sua reserva!</div>
 
             <Button label="Procurar restaurante" />
@@ -14,7 +14,7 @@ const Main = () => {
                 <img src={image1}></img>
                 <img src={image2}></img>
             </div>
-        </main>
+        </div>
     );
 };
 

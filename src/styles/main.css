@@ -1,17 +1,15 @@
 @import url('fonts.css');
 
-.text {
+.main .text {
     width: 100%;
     max-width: 1024px;
     height: auto;
     margin: 150px auto 40px;
-
     text-align: center;
     font-family: 'Newsreader', serif;
     font-weight: 400;
     font-size: 4vw;
     font-style: normal;
-
     line-height: 120%;
     letter-spacing: -1.28px;
 }
@@ -20,29 +18,20 @@
     font-style: italic;
 }
 
-Button {
+.main Button {
     display: flex;
     margin: auto;
-
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.images {
+.main .images {
     display: flex;
+    flex-direction: row;
     gap: 60px;
-
     align-items: center;
     justify-content: center;
-
     margin: 150px 90px;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-.images img {
-    flex: 0 0 calc(50% - 30px);
-    height: auto;
 }

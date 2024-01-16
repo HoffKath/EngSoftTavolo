@@ -4,7 +4,7 @@ import Button from './button';
 const Confirmation = ({ name, phone, availableSeats}) => {
     const options = Array.from({ length: availableSeats }, (_, index) => index + 1);
     return (
-        <div>
+        <div className="confirmation">
             <h1>2. Preencha o cadastro</h1>
             <form className="info">
                 <label>Nome: {name}</label>
