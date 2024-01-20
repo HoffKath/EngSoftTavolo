@@ -12,7 +12,7 @@ const Footer = ({
     <div className="footer">
       <div className="container">
         <p className="suggestion">DICA DO TAVOLO:</p>
-        <img src={restaurantBanner}></img>
+        <a href="#"><img src={restaurantBanner}></img></a>
         <p>Avaliação:
           <RatingView rating={restaurantRating} style={{ color: "#ECC149", paddingTop: "20px", margin: "auto" }} />
         </p>
