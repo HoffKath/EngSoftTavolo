@@ -1,0 +1,31 @@
+@import url('fonts.css');
+
+.container-restaurantPreview .image-restaurantPreview{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border: 10px solid darkred; 
+    width: 98.7%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+.container-restaurantPreview p{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.container-restaurantPreview-rating p{
+    display: flex;
+    justify-content: center;
+}
+
+
