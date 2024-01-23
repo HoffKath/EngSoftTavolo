@@ -22,7 +22,24 @@
     line-height: 130%;
     
 }
+.dados h1{
+    position: relative;
+    min-width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #9F2C2C;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding-left: 33px;
+    text-align: center;
 
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    
+}
 .confirmation .inline-label{
     margin-left: 220px;
 }
@@ -56,4 +73,11 @@
     position: fixed;
     right: 33px;
     margin-top:350px;
+}
+.dados .text{
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
 }
