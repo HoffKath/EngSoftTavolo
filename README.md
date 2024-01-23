@@ -53,16 +53,28 @@ You may also see any lint errors in the console.
 *services* = contains all images, css files, font files, etc.
 
 ## Páginas do site
+
 *path:"/"* = homepage
+
 *path:"/login"* = página de login
+
 *path:"/signin"* = página com botões para escolher entre criar uma conta de restaurante ou de consumidor
+
 *path:"/signinRestaurante"* = página para criar conta de restaurante
+
 *path:"/siginConsumidores"* = página para criar conta de consumidor
+
 *path:"/joinCustomer"* = página que aparece logo após o login/sign de um consumidor
+
 *path:"/joinRestaurante"* = página que aparece logo após o login/sign de um restaurante
+
 *path: "/deletarMinhaConta"* = página de confirmação de delete de conta
+
 *path:"/busquePeloRestaurante"* = página para procurar por restaurante
+
 *path:"/facaSuaReserva"* = página para fazer a reserva
+
 *path:"/dadosSuaReserva"* = página que o consumidor vê após fazer sua reserva
+
 
 
