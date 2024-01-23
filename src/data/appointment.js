@@ -1,13 +1,13 @@
-export class Appointment {
-  consumer
-  restaurant
+export default class Appointment {
+  consumerId
+  restaurantId
   date
   peopleAmount
 
-  constructor(consumer, restaurant, date, peopleAmount) {
-    this.consumer = consumer;
-    this.restaurant = restaurant;
+  constructor(consumerId, restaurantId, date, peopleAmount) {
+    this.consumerId = consumerId;
+    this.restaurantId = restaurantId;
     this.date = date;
     this.peopleAmount = peopleAmount;
   }
-}
+} 
