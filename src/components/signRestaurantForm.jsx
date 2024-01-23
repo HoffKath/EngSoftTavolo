@@ -41,12 +41,6 @@ const SignRestaurantForms = () => {
               <option value="true">Sim</option> 
               </select>
               </label>
-        <label class="text"> Possui opções vegetarianas/veganas:  
-            <select name="vegano" id="vegano"> 
-              <option value="false">Não</option> 
-              <option value="true">Sim</option> 
-              </select>
-        </label>
         <label class="text"> Possui opções sem gluten:  
             <select name="glueten" id="gluten"> 
               <option value="false">Não</option> 

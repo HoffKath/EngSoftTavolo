@@ -8,12 +8,13 @@ import Homepage from './routes/homepage';
 import RestauranLogin from './routes/restaurantLogin';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ConfirmationPage from './routes/confirmationPage';
-import DeleteAccount from './routes/deleteAccount';
+import AfterJoinCustomer from './routes/afterJoinCustomer';
 import SearchRestaurant from './routes/searchRestaurant';
 import TableBooking from './routes/tableBooking';
 import SignRestaurantForms from './components/signRestaurantForm';
 import SignCustomersForms from './components/singCostumersForms';
-
+import DeleteAccountComponent from './components/deleteAccountComponent';
+import AfterJoinRestaurant from './routes/afterJoinRestaurant';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -44,8 +45,8 @@ const router = createBrowserRouter([
         element:<SearchRestaurant/>
       },
       {
-        path:"/deletandoSuaConta",
-        element:<DeleteAccount/>
+        path:"/joinCustomer",
+        element:<AfterJoinCustomer/>
       },
       {
         path:"/signinRestaurante",
@@ -54,6 +55,14 @@ const router = createBrowserRouter([
       {
         path:"/siginConsumidores",
         element:<SignCustomersForms/>
+      },
+      {
+        path: "/deletarMinhaConta",
+        element:<DeleteAccountComponent/>
+      },
+      {
+        path:"/joinRestaurante",
+        element:<AfterJoinRestaurant/>
       }
 
     ]

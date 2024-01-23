@@ -19,7 +19,7 @@ h2 {
   width: 100%;
   float: left;
 }
-label{
+.box-login .text .label{
     text-align: left;
     font-size: 16px;
 
@@ -117,7 +117,7 @@ label{
 }
 .link:hover { color:#404040; }
 
-.text{
+.content-login .text{
 
     text-align: left;
     font-size: 16px;
@@ -127,4 +127,15 @@ label{
     float: left;
 
 }
+.content-login .tittle{
+
+  text-align: center;
+  font-size: 20px;
+  color: #0d0d0d;
+  padding: 5px 5px;
+  width: 100%;
+  float: left;
+
+}
+
 
