@@ -10,19 +10,22 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 
 **Roadmap - 08/01**
 
-| Task  | Data | Responsável |
-| ------------- | ------------- | ------------- |
-| Setup  | 10/01  | Santiago |
-| Criar componentes React  | 20/01  | Kathleen, Gian, Kaue |
-| APIs CSVs | 20/01 | Santiago |
-| Alterações parte 1 e 2 | 20/01 | Fernando |
-| Front Imagens | 22/01 | Kathleen |
-| Pag criar conta | 26/01 | Gian |
-| Pag login | 26/01 | Kaue |
-! Pag Home | 26/01 | Kathleen |
-| Pag pesquisa | 26/01 | Santiago |
-| Pag Reserva | 26/01 | Fernando |
-| Pag confirmacao | 26/01 | Kathleen |
+| Task  | Data | Responsável | **Status** |
+| ------------- | ------------- | ------------- | ------------- |
+| Setup  | 10/01  | Santiago | Done |
+| Criar componentes React  | 20/01  | Kathleen, Gean, Kaue | Done |
+| APIs CSVs | 30/01 | Santiago | Done |
+| Alterações parte 1 e 2 | 20/01 | Fernando | Done |
+| Front Imagens | 22/01 | Kaue e Gean | Done |
+| Pag criar conta | 26/01 | Kath | Done |
+| Pag login | 26/01 | Kath | Done |
+! Pag Home | 26/01 | Kath | Done |
+| Pag pesquisa | 30/01 | Kaue e Gean | Doing |
+| Pag Reserva | 30/01 | Fernando | Doing
+| Pag confirmacao | 26/01 | Kath | Done |
+! Pag de after join | 26/01 | Kath | Done |
+| Pag delete conta | 26/01 | Kath | Done |
+| Interagrações back e front | 05/01 | Todos | Open |
 
 ## Available Scripts
 
@@ -48,4 +51,30 @@ You may also see any lint errors in the console.
 *pages* = should contain one folder for each page in our application.
 
 *services* = contains all images, css files, font files, etc.
+
+## Páginas do site
+
+*path:"/"* = homepage
+
+*path:"/login"* = página de login
+
+*path:"/signin"* = página com botões para escolher entre criar uma conta de restaurante ou de consumidor
+
+*path:"/signinRestaurante"* = página para criar conta de restaurante
+
+*path:"/siginConsumidores"* = página para criar conta de consumidor
+
+*path:"/joinCustomer"* = página que aparece logo após o login/sign de um consumidor
+
+*path:"/joinRestaurante"* = página que aparece logo após o login/sign de um restaurante
+
+*path: "/deletarMinhaConta"* = página de confirmação de delete de conta
+
+*path:"/busquePeloRestaurante"* = página para procurar por restaurante
+
+*path:"/facaSuaReserva"* = página para fazer a reserva
+
+*path:"/dadosSuaReserva"* = página que o consumidor vê após fazer sua reserva
+
+
 

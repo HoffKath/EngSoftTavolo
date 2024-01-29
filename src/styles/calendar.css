@@ -1,4 +1,7 @@
 .react-calendar {
+  position: 'relative';
+  display: 'flex';
+  margin: 20px 80px;
   width: 350px;
   max-width: 100%;
   background: white;

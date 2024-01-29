@@ -1,4 +1,4 @@
-export class Consumer {
+export default class Consumer {
   user
   cellphone
 

@@ -1,28 +1,16 @@
-import TCalendar from "../components/calendar";
-import Separator from "../components/separator";
+import ChooseHour from "../components/chooseHour";
+import Confirmation from "../components/confirmation";
+import RestaurantBanner from "../components/restaurantBanner";
+//import '../styles/tableBooking.css'
+import '../styles/confirmation.css'
 
-const TableBooking = () =>{
-  const containerStyle = {
-    position: 'relative',
-    display:'flex',
-    margin: '100px',
-    top: '50%',   // Ajusta a posição vertical (Y)
-    left: '100%',  // Ajusta a posição horizontal (X)
-    transform: 'translate(-50%, -50%)', 
-  };
+const TableBooking =()=>{
 
     return (
-      
-      <div className="calender">
-          <p>
-          <Separator text={'Informação'}/>
-          </p>
-          <p>
-          <TCalendar /*style={containerStyle}*//>
-          </p>
-          <p>
-          <Separator text={'Informação'}/>
-          </p>
+      <div>
+          <RestaurantBanner/>
+          <ChooseHour/>
+          <Confirmation/>
       </div>
     );
   
