@@ -14,9 +14,7 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | ------------- | ------------- | ------------- | ------------- |
 | Setup  | 10/01  | Santiago | Done |
 | Criar componentes React  | 20/01  | Kathleen, Gean, Kaue | Done |
-| API Cliente | 28/01 | Santiago | Done |
-| API Restaurante | 30/01 | Santiago | Done |
-| API Reserva | 30/01 | Santiago | Done |
+| Create Models | 28/01 | Santiago | Done |
 | Alterações parte 1 e 2 | 20/01 | Fernando | Done |
 | Front Imagens | 22/01 | Kaue e Gean | Done |
 | Pag criar conta | 26/01 | Kath | Done |
@@ -24,6 +22,9 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 ! Pag Home | 26/01 | Kath | Done |
 | Pag pesquisa | 30/01 | Kaue e Gean | Doing |
 | Pag Reserva | 30/01 | Fernando | Doing
+| API Cliente | 30/01 | Santiago | Done |
+| API Restaurante | 30/01 | Santiago | Done |
+| API Reserva | 30/01 | Santiago | Done |
 | Pag confirmacao | 26/01 | Kath | Done |
 ! Pag de after join | 26/01 | Kath | Done |
 | Pag delete conta | 26/01 | Kath | Done |
