@@ -14,7 +14,9 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | ------------- | ------------- | ------------- | ------------- |
 | Setup  | 10/01  | Santiago | Done |
 | Criar componentes React  | 20/01  | Kathleen, Gean, Kaue | Done |
-| APIs CSVs | 30/01 | Santiago | Done |
+| API Cliente | 28/01 | Santiago | Done |
+| API Restaurante | 30/01 | Santiago | Done |
+| API Reserva | 30/01 | Santiago | Done |
 | Alterações parte 1 e 2 | 20/01 | Fernando | Done |
 | Front Imagens | 22/01 | Kaue e Gean | Done |
 | Pag criar conta | 26/01 | Kath | Done |
