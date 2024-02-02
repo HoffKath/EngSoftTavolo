@@ -1,0 +1,13 @@
+.restaurants-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15px 40px;
+    padding: 90px;
+    gap: 50px;
+}
+
+@media (max-width: 800px) {
+    .restaurants-container {
+        grid-template-columns: 1fr;
+    }
+}
