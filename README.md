@@ -20,8 +20,8 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Pag criar conta | 26/01 | Kath | Done |
 | Pag login | 26/01 | Kath | Done |
 ! Pag Home | 26/01 | Kath | Done |
-| Pag pesquisa | 30/01 | Kaue e Gean | Doing |
-| Pag Reserva | 30/01 | Fernando | Doing |
+| *Pag pesquisa* | 30/01 | Kaue e Gean | Doing |
+| *Pag Reserva* | 30/01 | Fernando | Doing |
 | API Cliente | 30/01 | Santiago | Done |
 | API Restaurante | 30/01 | Santiago | Done |
 | API Reserva | 30/01 | Santiago | Done |
@@ -80,6 +80,10 @@ You may also see any lint errors in the console.
 *path:"/facaSuaReserva"* = página para fazer a reserva
 
 *path:"/dadosSuaReserva"* = página que o consumidor vê após fazer sua reserva
+
+*path:"/reservasNoMeuRestaurante"* = página onde restaurante pode ver as reservas feitas para ele
+
+*path:"/minhasReservas"* = página onde consumidor pode ver as reservas que fez
 
 
 
