@@ -21,13 +21,15 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Pag login | 26/01 | Kath | Done |
 ! Pag Home | 26/01 | Kath | Done |
 | Pag pesquisa | 30/01 | Kaue e Gean | Doing |
-| Pag Reserva | 30/01 | Fernando | Doing
+| Pag Reserva | 30/01 | Fernando | Doing |
 | API Cliente | 30/01 | Santiago | Done |
 | API Restaurante | 30/01 | Santiago | Done |
 | API Reserva | 30/01 | Santiago | Done |
 | Pag confirmacao | 26/01 | Kath | Done |
-! Pag de after join | 26/01 | Kath | Done |
+| Pag de after join | 26/01 | Kath | Done |
 | Pag delete conta | 26/01 | Kath | Done |
+| Pag view reservas Restaurante | 02/02 | Kath | Done |
+| Pag view reservas Consumidor | 02/02 | Kath | Done |
 | Interagrações back e front | 05/01 | Todos | Open |
 
 ## Available Scripts
