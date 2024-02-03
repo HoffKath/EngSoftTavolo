@@ -7,6 +7,7 @@ const AfterJoinCustomer = () =>{
       <div className="AfterJoinCustomer">
         <Link to="/deletarMinhaConta"><Button label="Quero deletar minha conta"/></Link>
         <Link to="/busquePeloRestaurante"><Button label="Procurar restaurante"/></Link>
+        <Link to="/minhasReservas"><Button label="Minhas reservas"/></Link>
       </div>
     );
   
