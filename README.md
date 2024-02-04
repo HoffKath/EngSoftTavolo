@@ -21,7 +21,7 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Pag login | 26/01 | Kath | Done |
 ! Pag Home | 26/01 | Kath | Done |
 | *Pag pesquisa* | 30/01 | Kaue e Gean | Doing |
-| *Pag Reserva* | 30/01 | Fernando | Doing |
+| *Pag Reserva* | 30/01 | Fernando | Done |
 | API Cliente | 30/01 | Santiago | Done |
 | API Restaurante | 30/01 | Santiago | Done |
 | API Reserva | 30/01 | Santiago | Done |
