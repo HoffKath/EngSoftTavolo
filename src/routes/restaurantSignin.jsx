@@ -6,8 +6,8 @@ const RestauranSignin = () =>{
 
     return (
       <div className="login">
-        <Link to="/signinRestaurante"><Button label="Quero criar uma conta de restaurante"/></Link>
-        <Link to="/siginConsumidores"><Button label="Quero criar uma conta para reservar mesas"/></Link>
+        <Link to="/signinRestaurante"><Button className="loginBtn" label="Quero criar uma conta de restaurante"/></Link>
+        <Link to="/siginConsumidores"><Button className="loginBtn" label="Quero criar uma conta para reservar mesas"/></Link>
       </div>
     );
   
