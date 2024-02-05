@@ -1,0 +1,13 @@
+/* ListaCSV.css */
+.lista-container {
+    max-height: 350px; /* Altura máxima do contêiner antes de ativar o scroll */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  }
+  
+  .scrollable-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Restante dos estilos permanece o mesmo */
+  
