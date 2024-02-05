@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 const SearchRestaurant = () =>{
 
-  let restaurants;
+  let restaurants = [];
   // let restaurants = [new Restaurant(0, 0, 0, 0, 0, 0, 0, 0, 3.7, "restaurantName")]; //test
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,7 +22,7 @@ const SearchRestaurant = () =>{
   return (
     <div className="search-page">
         <p>
-          <SearchInput placeholder="Escreva o nome do restaurante aqui" value={searchTerm} onClick={handleSubmit} onChange={handleInputChange}/>
+          <SearchInput placeholder="Escreva o nome do restaurante aqui" value={searchTerm} onClick={handleSubmit} onChange={handleInputChange} style={{marginRight: '20px', marginLeft: '20px'}}/>
           <SearchResult restaurants={restaurants}/>
         </p>
     </div>
