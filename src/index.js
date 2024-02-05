@@ -15,6 +15,8 @@ import SignRestaurantForms from './components/signRestaurantForm';
 import SignCustomersForms from './components/singCostumersForms';
 import DeleteAccountComponent from './components/deleteAccountComponent';
 import AfterJoinRestaurant from './routes/afterJoinRestaurant';
+import ViewRestaurant from './routes/viewReservationsRestaurant';
+import ViewCustomer from './routes/viewReservationsCustomer';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -63,6 +65,14 @@ const router = createBrowserRouter([
       {
         path:"/joinRestaurante",
         element:<AfterJoinRestaurant/>
+      },
+      {
+        path:"/reservasNoMeuRestaurante",
+        element:<ViewRestaurant/>
+      },
+      {
+        path:"/minhasReservas",
+        element:<ViewCustomer/>
       }
 
     ]

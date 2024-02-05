@@ -6,6 +6,7 @@ const AfterJoinRestaurant = () =>{
     return (
       <div className="AfterJoin">
         <Link to="/deletarMinhaConta"><Button label="Quero deletar minha conta"/></Link>
+        <Link to="/reservasNoMeuRestaurante"><Button label ="Ver reservas"/></Link>
       </div>
     );
   

@@ -8,8 +8,10 @@ export default class Restaurant {
   isVegan
   isGlutenFree
   focus
+  logo
+  rating
 
-  constructor(user, restaurantName, address, cellphone, tablesAmount, hours, isVegan, isGlutenFree, focus) {
+  constructor(user, address, cellphone, tablesAmount, hours, isVegan, isGlutenFree, focus, rating, restaurantName, logo) {
     this.user = user;
     this.restaurantName = restaurantName;
     this.address = address;
@@ -19,5 +21,7 @@ export default class Restaurant {
     this.isVegan = isVegan;
     this.isGlutenFree = isGlutenFree;
     this.focus = focus;
+    this.logo = logo;
+    this.rating = rating;
   }
 }

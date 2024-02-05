@@ -1,0 +1,25 @@
+/* ListaCSV.css */
+.lista-container-calendar {
+  padding-top: 5px;
+  max-height: 225px;
+  min-height: 225px; /* Altura máxima do contêiner antes de ativar o scroll */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  background-color: #f0f0f0;
+  }
+  
+  .scrollable-list-calendar {
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding:0px 20px 0px 20px;
+  }
+
+  .date-calendar{
+    color: #9F2C2C;
+    padding-left:10px;
+    padding-top: 10px;
+  }
+
+  /* Restante dos estilos permanece o mesmo */
+  
