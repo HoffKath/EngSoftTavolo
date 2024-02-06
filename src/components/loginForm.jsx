@@ -4,8 +4,6 @@ import ConsumerService from '../services/csv/consumerService';
 import RestaurantService from '../services/csv/restaurantService';
 import '../styles/forms.css';
 
-let GLOBAL_ID = null;
-
 const LoginForms = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -20,20 +18,17 @@ const LoginForms = () => {
 
     if (isConsumerAuthenticated !== null) {
       console.log('Consumer Login successful');
-      GLOBAL_ID = isConsumerAuthenticated;
+      localStorage.setItem('GLOBAL_ID', isConsumerAuthenticated);
       // REDIRECT HERE
       navigate('/busquePeloRestaurante');
     } else if (isRestaurantAuthenticated !== null) {
-      GLOBAL_ID = isRestaurantAuthenticated
+      localStorage.setItem('GLOBAL_ID', isRestaurantAuthenticated);
       console.log('Restaurant Login successful');
       // REDIRECT HERE
       navigate('/afterJoinRestaurant');
     } else {
-      GLOBAL_ID = null;
       setError('Invalid email or password');
     }
-
-    console.log(GLOBAL_ID)
 
     setEmail('');
     setPassword('');

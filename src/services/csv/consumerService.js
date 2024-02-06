@@ -74,9 +74,14 @@ export default function ConsumerService() {
     
 
     async deleteConsumerById(consumerId) {
-      const allConsumers = await this.readConsumers();
-      const updatedConsumers = allConsumers.filter((consumer) => consumer.id !== consumerId);
-      await saveConsumerData(updatedConsumers);
-    },
+      try {
+        let allConsumers = await this.readConsumers();
+        allConsumers = allConsumers.filter((consumer) => consumer.id !== consumerId);
+        await saveConsumerData(allConsumers);
+      } catch (error) {
+        console.error('Error deleting consumer:', error);
+        throw error;
+      }
+    },    
   };
 }

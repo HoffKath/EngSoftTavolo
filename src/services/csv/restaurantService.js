@@ -80,9 +80,14 @@ export default function RestaurantService() {
     },
 
     async deleteRestaurantById(restaurantId) {
-      const allRestaurants = await this.readRestaurants();
-      const updatedRestaurants = allRestaurants.filter((restaurant) => restaurant.id !== restaurantId);
-      await saveRestaurantData(updatedRestaurants);
-    },
+      try {
+        let allRestaurants = await this.readRestaurants();
+        allRestaurants = allRestaurants.filter((restaurant) => restaurant.id !== restaurantId);
+        await saveRestaurantData(allRestaurants);
+      } catch (error) {
+        console.error('Error deleting restaurant:', error);
+        throw error;
+      }
+    }, 
   };
 }
