@@ -6,10 +6,11 @@
     align-items: center;
     text-align: center;
     border: 10px solid darkred; 
-    width: 98.7%;
+    width: 80%;
     height: auto;
     display: block;
     margin: auto;
+    object-fit: contain
 }
 
 
