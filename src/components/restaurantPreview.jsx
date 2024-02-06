@@ -10,7 +10,7 @@ function RestaurantPreview(props) {
             <img className='image-restaurantPreview' src={props.restaurantImg ?? image1}/>
             <p>{props.restaurantName ?? "Pasta Today"}</p>
             <div className='container-restaurantPreview-rating'>
-                <p>Avaliação:<RatingView style={{marginLeft: '5px', marginBottom: '25px'}} rating={props.restaurantRating ?? "5"}/></p>
+                <p>Avaliação:<RatingView style={{marginLeft: '5px', marginBottom: '5px'}} rating={props.restaurantRating ?? "5"}/></p>
             </div>
         </div>
     )

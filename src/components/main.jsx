@@ -9,7 +9,9 @@ const Main = () => {
         <div className="main">
             <div className="text">Estamos aqui para <br /><span className="italic">facilitar</span> sua reserva!</div>
 
-            <a href="#"><Link to="/busquePeloRestaurante"><Button label="Procurar restaurante" /></Link></a>
+            <Link to="/busquePeloRestaurante" style={{ textDecoration: 'none' }}>
+                <Button label="Procurar restaurante" />
+            </Link>
 
             <div className="images">
                 <img src={image1} width="400px" height="auto"></img>

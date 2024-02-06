@@ -1,20 +1,37 @@
-.login Button{
+.login Button {
     display: flex;
     margin: auto;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
 
 }
-.AfterJoin Button{
+
+.AfterJoin Button {
     display: flex;
     margin: auto;
     text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
 
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 90px;
+}
+
+.login img {
+    width: 400px;
+    height: auto;
+    border: 7px solid darkred;
+    border-radius: 15px;
 }
