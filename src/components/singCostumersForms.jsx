@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ConsumerService from '../services/csv/consumerService.js';
 import Consumer from '../data/consumer.js';
-import User from '../data/user.js';
 import '../styles/forms.css'
 
 const SignCustomersForms = () => {
@@ -24,9 +23,7 @@ const SignCustomersForms = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Create a new consumer object based on the form data
-      const newUser = new User(formData.nome, formData.email, formData.senha);
-      const newConsumer = new Consumer(newUser, formData.telefone);
+      const newConsumer = new Consumer(formData.nome, formData.email, formData.senha, formData.telefone);
       
       // Call the createConsumer method from ConsumerService
       await ConsumerService().createConsumer(newConsumer);

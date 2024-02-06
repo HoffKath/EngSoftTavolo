@@ -1,5 +1,4 @@
 import Restaurant from '../../data/restaurant.js';
-import User from '../../data/user.js';
 import Papa from 'papaparse';
 
 export default function RestaurantService() {
@@ -27,15 +26,18 @@ export default function RestaurantService() {
 
         return records.map((record) => {
           return new Restaurant(
-            new User(record.userId, record.userName, record.userEmail, record.userPassword),
-            record.restaurantName,
+            record.name,
+            record.email,
+            record.password,
             record.address,
             record.cellphone,
             record.tablesAmount,
             record.hours,
             record.isVegan,
             record.isGlutenFree,
-            record.focus
+            record.focus,
+            record.restaurantName,
+            record.id,
           );
         });
       } catch (error) {
@@ -45,24 +47,36 @@ export default function RestaurantService() {
     },
 
     checkCredentials(email, password) {
-      return this.readRestaurants().some(
-        (restaurant) => restaurant.user.email === email && restaurant.user.password === password
-      );
+      return this.readRestaurants().then(restaurants => {
+        return restaurants.some(
+          restaurant => restaurant.email === email && restaurant.password === password
+        );
+      }).catch(error => {
+        console.error('Error checking credentials:', error);
+        throw error;
+      });
     },
 
     getRestaurantById(restaurantId) {
-      return this.readRestaurants().find((restaurant) => restaurant.user.id === restaurantId);
+      return this.readRestaurants().find((restaurant) => restaurant.id === restaurantId);
     },
 
     async createRestaurant(newRestaurant) {
-      const allRestaurants = await this.readRestaurants();
-      allRestaurants.push(newRestaurant);
-      await saveRestaurantData(allRestaurants);
+      try {
+        const allRestaurants = await this.readRestaurants();
+        
+        allRestaurants.push(newRestaurant);
+        
+        await saveRestaurantData(allRestaurants);
+      } catch (error) {
+        console.error('Error creating restaurant:', error);
+        throw error;
+      }
     },
 
     async deleteRestaurantById(restaurantId) {
       const allRestaurants = await this.readRestaurants();
-      const updatedRestaurants = allRestaurants.filter((restaurant) => restaurant.user.id !== restaurantId);
+      const updatedRestaurants = allRestaurants.filter((restaurant) => restaurant.id !== restaurantId);
       await saveRestaurantData(updatedRestaurants);
     },
   };

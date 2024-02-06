@@ -3,6 +3,7 @@ export default class Appointment {
   restaurantId
   date
   peopleAmount
+  special
 
   constructor(consumerId, restaurantId, date, peopleAmount, special) {
     this.consumerId = consumerId;

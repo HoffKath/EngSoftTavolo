@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import RestaurantService from '../services/csv/restaurantService';
-import User from '../data/user';
 import Restaurant from '../data/restaurant';
 import '../styles/forms.css';
 
@@ -30,18 +29,19 @@ const SignRestaurantForms = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const newUser = new User(formData.nome, formData.email, formData.senha);
 
       const newRestaurant = new Restaurant(
-        newUser,
-        formData.nomeRestaurante,
+        formData.nome,
+        formData.email,
+        formData.senha,
         formData.endereco,
         formData.telefone,
         formData.mesas,
         formData.horarios,
         formData.vegano,
         formData.semGluten,
-        formData.culinaria
+        formData.culinaria,
+        formData.nomeRestaurante
       );
 
       await RestaurantService().createRestaurant(newRestaurant);

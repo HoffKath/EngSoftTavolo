@@ -1,5 +1,4 @@
 import Consumer from '../../data/consumer.js';
-import User from '../../data/user.js';
 import Papa from 'papaparse';
 
 export default function ConsumerService() {
@@ -27,8 +26,11 @@ export default function ConsumerService() {
 
         return records.map((record) => {
           return new Consumer(
-            new User(record.userId, record.userName, record.userEmail, record.userPassword),
+            record.name,
+            record.email,
+            record.password,
             record.cellphone,
+            record.id,
           );
         });
       } catch (error) {
@@ -38,24 +40,37 @@ export default function ConsumerService() {
     },
 
     checkCredentials(email, password) {
-      return this.readConsumers().some(
-        (consumer) => consumer.user.email === email && consumer.user.password === password
-      );
+      return this.readConsumers().then(consumers => {
+        return consumers.some(
+          consumer => consumer.email === email && consumer.password === password
+        );
+      }).catch(error => {
+        console.error('Error checking credentials:', error);
+        throw error;
+      });
     },
 
     getConsumerById(consumerId) {
-      return this.readConsumers().find((consumer) => consumer.user.id === consumerId);
+      return this.readConsumers().find((consumer) => consumer.id === consumerId);
     },
 
     async createConsumer(newConsumer) {
-      const allConsumers = await this.readConsumers();
-      allConsumers.push(newConsumer);
-      await saveConsumerData(allConsumers);
+      try {
+        const allConsumers = await this.readConsumers();
+        
+        allConsumers.push(newConsumer);
+        
+        await saveConsumerData(allConsumers);
+      } catch (error) {
+        console.error('Error creating consumer:', error);
+        throw error;
+      }
     },
+    
 
     async deleteConsumerById(consumerId) {
       const allConsumers = await this.readConsumers();
-      const updatedConsumers = allConsumers.filter((consumer) => consumer.user.id !== consumerId);
+      const updatedConsumers = allConsumers.filter((consumer) => consumer.id !== consumerId);
       await saveConsumerData(updatedConsumers);
     },
   };

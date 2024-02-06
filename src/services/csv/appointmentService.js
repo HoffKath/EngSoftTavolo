@@ -43,6 +43,7 @@ export default function AppointmentService() {
       const appointmentsByConsumer = allAppointments.filter((appointment) => appointment.consumerId === consumerId);
       return appointmentsByConsumer.sort((a, b) => new Date(a.date) - new Date(b.date));
     },
+    
     async readAppointments() {
       try {
         const records = await fetchAppointmentData();
