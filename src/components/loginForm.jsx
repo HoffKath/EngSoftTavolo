@@ -20,12 +20,12 @@ const LoginForms = () => {
       console.log('Consumer Login successful');
       localStorage.setItem('GLOBAL_ID', isConsumerAuthenticated);
       // REDIRECT HERE
-      navigate('/busquePeloRestaurante');
+      navigate('/joinCustomer');
     } else if (isRestaurantAuthenticated !== null) {
       localStorage.setItem('GLOBAL_ID', isRestaurantAuthenticated);
       console.log('Restaurant Login successful');
       // REDIRECT HERE
-      navigate('/afterJoinRestaurant');
+      navigate('/joinRestaurante');
     } else {
       setError('Invalid email or password');
     }

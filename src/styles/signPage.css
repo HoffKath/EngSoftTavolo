@@ -35,3 +35,13 @@
     border: 7px solid darkred;
     border-radius: 15px;
 }
+.AfterJoinCustomer Button {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}

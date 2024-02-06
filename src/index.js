@@ -20,7 +20,7 @@ import ViewCustomer from './routes/viewReservationsCustomer';
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<App />,
+    element:<App/>,
     children:[
       {
         path:"/",
