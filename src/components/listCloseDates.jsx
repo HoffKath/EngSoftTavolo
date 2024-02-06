@@ -7,11 +7,12 @@ const ListCloseDates = ({ data, horario, capacidade, onSelect, isSelected }) => 
     const formattedDay = format(dateObject, 'd', { locale: ptBR });
     const formattedMonth = format(dateObject, 'MMMM', { locale: ptBR });
   
-    const itemClassName = `list-item ${isSelected ? 'selected' : ''}`;
 
     const handleItemClick = () => {
         onSelect({ data, horario, capacidade });
     };
+
+    const itemClassName = `list-item ${isSelected ? 'selected' : ''}`;
   
     return (
       <div className={itemClassName} onClick={handleItemClick}>

@@ -3,30 +3,34 @@ import ListCloseDates from './listCloseDates'
 import '../styles/reservationSelector.css'
 
 
-const ListaCSV = () => {
-  const [dataList, setDataList] = useState([
-    { Data: '2024-02-20', Horario: '10:00', Capacidade: '10' },
-    { Data: '2024-02-20', Horario: '14:00', Capacidade: '15' },
-    { Data: '2024-02-21', Horario: '12:00', Capacidade: '12' },
-    { Data: '2024-02-22', Horario: '18:00', Capacidade: '10' },
-    // Adicione mais dados conforme necessário
-  ]);
+const ListaCSV = ({ dataList,  onChangeSelected }) => {
+  
+  const first5DataList = dataList.slice(0, 5);
 
-  const handleSelectItem = (selectedItem) => {
-    console.log('Item selecionado:', selectedItem);
-    // Faça o que for necessário com o item selecionado
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleSelectDate = (selectedItem) => {
+    setSelectedDate(selectedItem);
+    onChangeSelected(selectedItem.capacidade);
+    //console.log(selectedDate.data,selectedDate.horario,selectedItem.capacidade);
   };
 
   return (
     
       <div className="lista-container">
-        {dataList.map((item, index) => (
+        {first5DataList.map((item, index) => (
           <ListCloseDates
             key={index}
             data={item.Data}
             horario={item.Horario}
             capacidade={item.Capacidade}
-            onSelect={handleSelectItem}
+            onSelect={handleSelectDate}
+            isSelected={
+              selectedDate &&
+              selectedDate.data === item.Data &&
+              selectedDate.horario === item.Horario &&
+              selectedDate.capacidade === item.Capacidade
+            }
           />
         ))}
     </div>
