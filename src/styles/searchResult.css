@@ -1,7 +1,7 @@
 .restaurants-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 15px 40px;
+    margin: 5px 40px;
     padding: 90px;
     gap: 50px;
 }

@@ -43,13 +43,12 @@ export default function AppointmentService() {
       const appointmentsByConsumer = allAppointments.filter((appointment) => appointment.consumerId === consumerId);
       return appointmentsByConsumer.sort((a, b) => new Date(a.date) - new Date(b.date));
     },
-
     async readAppointments() {
       try {
         const records = await fetchAppointmentData();
 
         return records.map((record) => {
-          return new Appointment(record.consumerId, record.restaurantId, record.date, record.peopleAmount);
+          return new Appointment(record.consumerId, record.restaurantId, record.date, record.peopleAmount, record.special);
         });
       } catch (error) {
         console.error('Error reading appointments:', error);

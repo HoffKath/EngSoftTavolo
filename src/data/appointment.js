@@ -4,10 +4,11 @@ export default class Appointment {
   date
   peopleAmount
 
-  constructor(consumerId, restaurantId, date, peopleAmount) {
+  constructor(consumerId, restaurantId, date, peopleAmount, special) {
     this.consumerId = consumerId;
     this.restaurantId = restaurantId;
     this.date = date;
     this.peopleAmount = peopleAmount;
+    this.special = special
   }
 } 
