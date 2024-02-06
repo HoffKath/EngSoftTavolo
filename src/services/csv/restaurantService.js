@@ -62,8 +62,15 @@ export default function RestaurantService() {
       });
     },
 
-    getRestaurantById(restaurantId) {
-      return this.readRestaurants().find((restaurant) => restaurant.id === restaurantId);
+    async getRestaurantById(restaurantId) {
+      try {
+        const restaurants = await this.readRestaurants();
+        const matchingRestaurant = restaurants.find((restaurant) => restaurant.id === restaurantId);
+        return matchingRestaurant || null;
+      } catch (error) {
+        console.error('Error getting restaurant by ID:', error);
+        throw error;
+      }
     },
 
     async createRestaurant(newRestaurant) {

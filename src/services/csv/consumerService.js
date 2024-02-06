@@ -55,8 +55,15 @@ export default function ConsumerService() {
       });
     },
 
-    getConsumerById(consumerId) {
-      return this.readConsumers().find((consumer) => consumer.id === consumerId);
+    async getConsumerById(consumerId) {
+      try {
+        const consumers = await this.readConsumers();
+        const matchingConsumer = consumers.find((consumer) => consumer.id === consumerId);
+        return matchingConsumer || null;
+      } catch (error) {
+        console.error('Error getting consumer by ID:', error);
+        throw error;
+      }
     },
 
     async createConsumer(newConsumer) {
