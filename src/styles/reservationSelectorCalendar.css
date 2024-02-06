@@ -9,6 +9,7 @@
   
   .scrollable-list-calendar {
     height:300px;
+    min-width: 440px;
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;

@@ -1,8 +1,9 @@
 import '../styles/listAllDates.css'
 
-const ListAllDates = ({ horario, capacidade, onSelect, isSelected }) => {
+const ListAllDates = ({data, horario, capacidade, onSelect, isSelected }) => {
+
   const handleItemClick = () => {
-    onSelect({ horario, capacidade });
+    onSelect({data, horario, capacidade});
   };
 
   const itemClassName = `hora-capacidade-item ${isSelected ? 'selected' : ''}`;
