@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ConsumerService from '../services/csv/consumerService';
 import RestaurantService from '../services/csv/restaurantService';
 import '../styles/forms.css';
@@ -7,19 +8,22 @@ const LoginForms = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const isConsumerAuthenticated = ConsumerService().checkCredentials(email, password);
-    console.log(isConsumerAuthenticated)
-    const isRestaurantAuthenticated = RestaurantService().checkCredentials(email, password);
-    console.log(isRestaurantAuthenticated)
+    const isConsumerAuthenticated = await ConsumerService().checkCredentials(email, password);
+    const isRestaurantAuthenticated = await RestaurantService().checkCredentials(email, password);
 
     if (isConsumerAuthenticated) {
       console.log('Consumer Login successful');
+      // REDIRECT HERE
+      navigate('/busquePeloRestaurante');
     } else if (isRestaurantAuthenticated) {
       console.log('Restaurant Login successful');
+      // REDIRECT HERE
+      navigate('/afterJoinRestaurant');
     } else {
       setError('Invalid email or password');
     }
