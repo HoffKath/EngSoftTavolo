@@ -48,9 +48,14 @@ export default function RestaurantService() {
 
     checkCredentials(email, password) {
       return this.readRestaurants().then(restaurants => {
-        return restaurants.some(
+        const matchingRestaurant = restaurants.find(
           restaurant => restaurant.email === email && restaurant.password === password
         );
+        if (matchingRestaurant) {
+          return matchingRestaurant.id;
+        } else {
+          return null;
+        }
       }).catch(error => {
         console.error('Error checking credentials:', error);
         throw error;

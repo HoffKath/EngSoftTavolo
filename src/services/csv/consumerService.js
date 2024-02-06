@@ -41,9 +41,14 @@ export default function ConsumerService() {
 
     checkCredentials(email, password) {
       return this.readConsumers().then(consumers => {
-        return consumers.some(
+        const matchingConsumer = consumers.find(
           consumer => consumer.email === email && consumer.password === password
         );
+        if (matchingConsumer) {
+          return matchingConsumer.id;
+        } else {
+          return null;
+        }
       }).catch(error => {
         console.error('Error checking credentials:', error);
         throw error;
