@@ -21,33 +21,52 @@ export default function AppointmentService() {
 
   return {
     async createAppointment(newAppointment) {
-      const allAppointments = await this.readAppointments();
-      allAppointments.push(newAppointment);
-      await saveAppointmentData(allAppointments);
+      try {
+        const allAppointments = await this.readAppointments();
+        allAppointments.push(newAppointment);
+        await saveAppointmentData(allAppointments);
+      } catch (error) {
+        console.error('Error creating appointment:', error);
+        throw error;
+      }
     },
-
+  
     async deleteAppointmentById(appointmentId) {
-      const allAppointments = await this.readAppointments();
-      const updatedAppointments = allAppointments.filter((appointment) => appointment.id !== appointmentId);
-      await saveAppointmentData(updatedAppointments);
+      try {
+        const allAppointments = await this.readAppointments();
+        const updatedAppointments = allAppointments.filter((appointment) => appointment.id !== appointmentId);
+        await saveAppointmentData(updatedAppointments);
+      } catch (error) {
+        console.error('Error deleting appointment by ID:', error);
+        throw error;
+      }
     },
-
+  
     async getAppointmentsByRestaurantId(restaurantId) {
-      const allAppointments = await this.readAppointments();
-      const appointmentsByRestaurant = allAppointments.filter((appointment) => appointment.restaurantId === restaurantId);
-      return appointmentsByRestaurant.sort((a, b) => new Date(a.date) - new Date(b.date));
+      try {
+        const allAppointments = await this.readAppointments();
+        const appointmentsByRestaurant = allAppointments.filter((appointment) => appointment.restaurantId === restaurantId);
+        return appointmentsByRestaurant.sort((a, b) => new Date(a.date) - new Date(b.date));
+      } catch (error) {
+        console.error('Error getting appointments by restaurant ID:', error);
+        throw error;
+      }
     },
-
+  
     async getAppointmentsByConsumerId(consumerId) {
-      const allAppointments = await this.readAppointments();
-      const appointmentsByConsumer = allAppointments.filter((appointment) => appointment.consumerId === consumerId);
-      return appointmentsByConsumer.sort((a, b) => new Date(a.date) - new Date(b.date));
+      try {
+        const allAppointments = await this.readAppointments();
+        const appointmentsByConsumer = allAppointments.filter((appointment) => appointment.consumerId === consumerId);
+        return appointmentsByConsumer.sort((a, b) => new Date(a.date) - new Date(b.date));
+      } catch (error) {
+        console.error('Error getting appointments by consumer ID:', error);
+        throw error;
+      }
     },
     
     async readAppointments() {
       try {
         const records = await fetchAppointmentData();
-
         return records.map((record) => {
           return new Appointment(record.consumerId, record.restaurantId, record.date, record.peopleAmount, record.special);
         });
