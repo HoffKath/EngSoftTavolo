@@ -9,24 +9,34 @@ import ListaCalendar from './reservationSelectorCalendar';
 const ChooseHour = ({onChangeSelected, Hour}) => {
 
     // Função para obter a lista de horários entre o intervalo fornecido
-function getHorarios(intervaloHorario) {
-    const [inicio, fim] = intervaloHorario.split(' - ');
-    const [inicioHora, inicioMinuto] = inicio.split(':').map(Number);
-    const [fimHora, fimMinuto] = fim.split(':').map(Number);
-  
-    const horarios = [];
-  
-    for (let hora = inicioHora; hora <= fimHora; hora++) {
-      for (let minuto = 0; minuto < 60; minuto += 30) {
-        const horario = `${hora.toString().padStart(2, '0')}:${minuto.toString().padStart(2, '0')}`;
-        if ((hora === inicioHora && minuto >= inicioMinuto) || (hora !== inicioHora && hora !== fimHora) || (hora === fimHora && minuto <= fimMinuto)) {
-          horarios.push(horario);
+    function getHorarios(intervaloHorario) {
+        const [inicio, fim] = intervaloHorario.split(' - ');
+        const [inicioHora, inicioMinuto] = inicio.split(':').map(Number);
+        const [fimHora, fimMinuto] = fim.split(':').map(Number);
+      
+        const horarios = [];
+      
+        for (let hora = inicioHora; hora <= fimHora; hora++) {
+          for (let minuto = 0; minuto < 60; minuto += 30) {
+            const horario = `${hora.toString().padStart(2, '0')}:${minuto.toString().padStart(2, '0')}`;
+            if ((hora === inicioHora && minuto >= inicioMinuto) || (hora !== inicioHora && hora !== fimHora) || (hora === fimHora && minuto <= fimMinuto)) {
+              horarios.push(horario);
+            }
+          }
         }
+      
+        return horarios;
       }
-    }
-  
-    return horarios;
-  }
+
+      function getRandomEvenInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        let num;
+        do {
+          num = Math.floor(Math.random() * (max - min) + min);
+        } while (num % 2 !== 0); // Garante que o número seja par
+        return num;
+      }
   
   // Função para criar a lista de objetos para os próximos 30 dias
   function criarDataList(intervaloHorario) {
@@ -40,12 +50,13 @@ function getHorarios(intervaloHorario) {
       const horarios = getHorarios(intervaloHorario);
   
       horarios.forEach(horario => {
-        dataList.push({ Data: dataISO, Horario: horario, Capacidade: '10' }); // Capacidade padrão de 10
+        dataList.push({ Data: dataISO, Horario: horario, Capacidade: 10 }); // Capacidade padrão de 10
       });
     }
   
     return dataList;
   }
+
     const intervaloHorario = '09:00 - 23:00';
     const capacidadeString = 'Quatro';
     const dataList = criarDataList(intervaloHorario);
