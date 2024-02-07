@@ -69,7 +69,7 @@
     background-color: #D9D9D9;
 }
 
-.confirmation Button{
+.confirmation .ConfirmationButton{
     position: fixed;
     right: 33px;
     margin-top:350px;

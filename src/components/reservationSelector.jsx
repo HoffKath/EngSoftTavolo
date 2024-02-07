@@ -11,7 +11,7 @@ const ListaCSV = ({ dataList,  onChangeSelected }) => {
 
   const handleSelectDate = (selectedItem) => {
     setSelectedDate(selectedItem);
-    onChangeSelected(selectedItem.capacidade);
+    onChangeSelected(selectedItem);
     //console.log(selectedDate.data,selectedDate.horario,selectedItem.capacidade);
   };
 

@@ -26,8 +26,8 @@ const RestaurantBanner = ({name, rating, phone, adress, cuisine, VegOption, Glut
 
                     <div className='MoreInfo'>
                         <label>Culinária: {cuisine}</label><br/>
-                        <label>{{VegOption} ? 'Possui Opção Vegetariana' : 'Não Possui Opção Vegetariana'}</label><br/>
-                        <label>{{GlutenFreeOption} ? 'Possui Opção sem Glúten' : 'Não Possui Opção sem Glúten'}</label><br/>
+                        <label>{VegOption === 'true' ? 'Possui Opção Vegetariana' : 'Não Possui Opção Vegetariana'}</label><br/>
+                        <label>{GlutenFreeOption === 'true' ? 'Possui Opção sem Glúten' : 'Não Possui Opção sem Glúten'}</label><br/>
                     </div>
                 </div>
             </div>

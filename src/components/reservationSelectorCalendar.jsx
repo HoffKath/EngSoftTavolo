@@ -19,7 +19,7 @@ const ListaCalendar = ({ dataList, selectedDate, onChangeSelected }) => {
  
   const handleSelectHoraCapacidade = (selectedItem) => {
     setSelectedHoraCapacidade(selectedItem);
-    onChangeSelected(selectedItem.capacidade);
+    onChangeSelected(selectedItem);
      console.log(selectedItem.data,selectedItem.horario,selectedItem.capacidade);
   };
 
