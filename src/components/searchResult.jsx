@@ -7,13 +7,7 @@ const SearchResult = ({ restaurants }) => {
   return (
     <div className="restaurants-container">
       {restaurants.map((restaurant) => (
-        <Link
-          to={{
-            pathname: '/facaSuaReserva',
-            state: { restaurantData: restaurant }
-          }}
-          style={{ textDecoration: 'none', color: 'black' }}
-        >
+        <Link to={`/facaSuaReserva/${restaurant.id}`} style={{ textDecoration: 'none', color: 'black' }}>
           <RestaurantPreview restaurantImg={restaurant.logo}
             restaurantName={restaurant.name}
             restaurantRating={restaurant.rating} />
