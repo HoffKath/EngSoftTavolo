@@ -12,7 +12,7 @@ import Button from "../components/button";
 import Appointment from "../data/appointment";
 
 
-const TableBooking =()=>{
+const TableBooking = () =>{
 
   const [consumer, setConsumer] = useState([]);
   /*const [restaurant, setRestaurant] = useState([]);*/

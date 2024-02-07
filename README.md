@@ -19,9 +19,9 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Front Imagens | 22/01 | Kaue e Gean | Done |
 | Pag criar conta | 26/01 | Kath | Done |
 | Pag login | 26/01 | Kath | Done |
-! Pag Home | 26/01 | Kath | Done |
-| *Pag pesquisa* | 30/01 | Kaue e Gean | Doing |
-| *Pag Reserva* | 30/01 | Fernando | Done |
+| Pag Home | 26/01 | Kath | Done |
+| Pag pesquisa | 02/01 | Kaue e Gean | Done |
+| Pag Reserva | 02/01 | Fernando | Done |
 | API Cliente | 30/01 | Santiago | Done |
 | API Restaurante | 30/01 | Santiago | Done |
 | API Reserva | 30/01 | Santiago | Done |
@@ -30,7 +30,11 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Pag delete conta | 26/01 | Kath | Done |
 | Pag view reservas Restaurante | 02/02 | Kath | Done |
 | Pag view reservas Consumidor | 02/02 | Kath | Done |
-| Interagrações back e front | 05/01 | Todos | Open |
+| Interagrações Login | 05/01 | Santiago | Done |
+| Interagrações Create | 05/01 | Santiago | Done |
+| Interagrações Tabelas | 06/01 | Kath | Done |
+| Interagrações Reserva | 07/01 | Kaue e Gian | Doing |
+| Interagrações Reserva | 07/01 | Santiago e Fernando | Doing |
 
 ## Available Scripts
 

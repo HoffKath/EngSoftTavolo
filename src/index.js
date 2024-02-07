@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: <RestauranSignin/>
       },
       {
-        path:"/facaSuaReserva",
+        path:"/facaSuaReserva/:restaurantId",
         element:<TableBooking/>
       },
       {
