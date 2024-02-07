@@ -15,7 +15,7 @@ const SearchResult = ({ restaurants }) => {
           style={{ textDecoration: 'none', color: 'black' }}
         >
           <RestaurantPreview restaurantImg={restaurant.logo}
-            restaurantName={restaurant.restaurantName}
+            restaurantName={restaurant.name}
             restaurantRating={restaurant.rating} />
         </Link>
       ))}

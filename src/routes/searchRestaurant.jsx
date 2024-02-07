@@ -1,6 +1,5 @@
 import SearchInput from "../components/searchInput"
 import SearchResult from "../components/searchResult";
-import Restaurant from "../data/restaurant"
 import RestaurantService from '../services/csv/restaurantService';
 
 import React, { useState } from 'react';
@@ -16,13 +15,19 @@ const SearchRestaurant = () => {
 
   const handleSubmit = async (value) => {
   
+    console.log(value);
+
     try{
     
-      const fetchedRestaurants = await RestaurantService.fetchRestaurantData();
+      const fetchedRestaurants = await RestaurantService().readRestaurants();
+
+      console.log(fetchedRestaurants)
       
       const filteredRestaurants = fetchedRestaurants.filter(restaurant =>
-        restaurant.restaurantName.toLowerCase().includes(value.toLowerCase())
+        restaurant.name.toLowerCase().includes(value.toLowerCase())
       );
+
+      console.log(filteredRestaurants)
 
       setRestaurants(filteredRestaurants);
     } 
