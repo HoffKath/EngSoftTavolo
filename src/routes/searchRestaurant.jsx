@@ -14,20 +14,14 @@ const SearchRestaurant = () => {
   };
 
   const handleSubmit = async (value) => {
-  
-    console.log(value);
 
     try{
     
       const fetchedRestaurants = await RestaurantService().readRestaurants();
-
-      console.log(fetchedRestaurants)
       
       const filteredRestaurants = fetchedRestaurants.filter(restaurant =>
         restaurant.name.toLowerCase().includes(value.toLowerCase())
       );
-
-      console.log(filteredRestaurants)
 
       setRestaurants(filteredRestaurants);
     } 
