@@ -27,7 +27,7 @@ const Confirmation = ({ name, phone, availableSeats}) => {
                 </label>
 
 
-                <Button label="Reservar!" />
+                <Button className="ConfirmationButton" label="Reservar!" />
             </form>
 
         </div>
