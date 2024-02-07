@@ -33,8 +33,8 @@ Trabalho de Engenharia de Software da Universidade Federal do Rio Grande do Sul 
 | Interagrações Login | 05/01 | Santiago | Done |
 | Interagrações Create | 05/01 | Santiago | Done |
 | Interagrações Tabelas | 06/01 | Kath | Done |
-| Interagrações Reserva | 07/01 | Kaue e Gian | Doing |
-| Interagrações Reserva | 07/01 | Santiago e Fernando | Doing |
+| Interagrações Reserva | 07/01 | Kaue e Gian | Done |
+| Interagrações Reserva | 07/01 | Santiago e Fernando | Done |
 
 ## Available Scripts
 
@@ -82,8 +82,6 @@ You may also see any lint errors in the console.
 *path:"/busquePeloRestaurante"* = página para procurar por restaurante
 
 *path:"/facaSuaReserva"* = página para fazer a reserva
-
-*path:"/dadosSuaReserva"* = página que o consumidor vê após fazer sua reserva
 
 *path:"/reservasNoMeuRestaurante"* = página onde restaurante pode ver as reservas feitas para ele
 
